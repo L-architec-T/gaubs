@@ -34,7 +34,7 @@ a:focus {
 }
 
 .tm-text-primary {
-  color: #82bb27;
+  color: #808000;
 }
 
 .tm-font-big {
@@ -43,7 +43,7 @@ a:focus {
 
 .tm-btn-primary {
   color: white;
-  background-color: #82bb27;
+  background-color: #808000;
   padding: 14px 35px;
   border-radius: 30px;
 }
@@ -51,7 +51,7 @@ a:focus {
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
   color: white;
-  background-color: #387216;
+  background-color: #5e5e02;
 }
 
 /* Navbar */
@@ -77,11 +77,11 @@ a:focus {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #82bb27;
+  color: #808000;
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #82bb27;
+  color: #808000;
 }
 
 .nav-item {
@@ -99,7 +99,7 @@ a:focus {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: #82bb27;
+  color: #808000;
 }
 
 .navbar-toggler {
@@ -206,7 +206,7 @@ a:focus {
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
   color: white;
-  background: #82bb27;
+  background: #808000;
 }
 
 /* Introduction */
@@ -224,7 +224,7 @@ a:focus {
 .tm-icon {
   display: block;
   margin-bottom: 55px;
-  color: #82bb27;
+  color: #808000;
 }
 
 /* Work */
@@ -256,7 +256,7 @@ a:focus {
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #82bb27;
+  color: #808000;
 }
 
 .slick-dots li button:before {
@@ -364,7 +364,7 @@ figure.effect-honey figcaption::before {
   left: 0;
   width: 100%;
   height: 10px;
-  background: #82bb27;
+  background: #808000;
   content: "";
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
@@ -446,7 +446,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-contact-item-link:hover i,
 .tm-contact-item-link:hover span {
-  color: #82bb27;
+  color: #808000;
 }
 
 .tm-input {
@@ -491,7 +491,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-footer-link:hover,
 .tm-footer-link:focus {
-  color: #82bb27;
+  color: #808000;
   text-decoration: none;
 }
 
