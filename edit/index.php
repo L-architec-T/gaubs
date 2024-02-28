@@ -37,7 +37,7 @@
                   <a class="nav-link tm-nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="../">Mode Edition</a>
+                  <a class="nav-link tm-nav-link" href="javascript:void(0);" onclick="redirectToEditPage()">Mode Edit</a>
               </li>
             </ul>
           </div>        
@@ -236,6 +236,11 @@
     <script src="../magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="../js/jquery.singlePageNav.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script>
+        function redirectToEditPage() {
+            window.location.href = '../index.php';
+        }
+    </script>
     <script>
         function createJsonFromEditableContent() {
             var editableElements = document.querySelectorAll('[contenteditable="true"]');

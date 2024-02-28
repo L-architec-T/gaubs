@@ -37,7 +37,7 @@
                   <a class="nav-link tm-nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="edit/index.html">Login</a>
+                  <a class="nav-link tm-nav-link" href="javascript:void(0);" onclick="redirectToEditPage()">Login</a>
               </li>
             </ul>
           </div>        
@@ -69,14 +69,14 @@
           </div>
           <div class="col-lg-6">
             <div class="tm-intro-text-container">
-                <h2 class="tm-text-primary mb-4 tm-section-title">Introduction</h2>
-                <p class="mb-4 tm-intro-text">
+                <h2 class="tm-text-primary mb-4 tm-section-title" data-key="introduction">Introduction</h2>
+                <p class="mb-4 tm-intro-text" data-key="introduction2">
                   Ici se trouvera <strong>l'introduction</strong> du metier
                   expliquant se qu'ils font.
               </p>
                 <p class="mb-5 tm-intro-text">
                   Second paragraphe
-                  <a rel="nofollow" href="https://gaubsmidi">gaubsmidi</a>. Remerciement. </p>
+                  <a rel="nofollow" href="https://gaubsmidi" data-key="introduction3">gaubsmidi</a>. Remerciement. </p>
                 <div class="tm-next">
                   <a href="#work" class="tm-intro-text tm-btn-primary">Voir plus</a>
                 </div>
@@ -88,8 +88,8 @@
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Galerie</h2>
-              <p class="mx-auto tm-work-description">
+              <h2 class="tm-text-primary tm-section-title mb-4" data-key="galerie">Galerie</h2>
+              <p class="mx-auto tm-work-description" data-key="galerie2">
                 Parragraphe expliquant les photos ci-dessous.
               </p>
           </div>            
@@ -173,8 +173,8 @@
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
-            <h2 class="tm-text-primary tm-section-title mb-4">Ou sommes nous ?</h2>
-            <p class="mx-auto tm-work-description">
+            <h2 class="tm-text-primary tm-section-title mb-4" data-key="what">Ou sommes nous ?</h2>
+            <p class="mx-auto tm-work-description" data-key="what2">
               Parragraphe expliquant la zone de travail.
             </p>
           </div>
@@ -194,9 +194,9 @@
       <div class="container tm-container-contact">
         <div class="row">
             <div class="col-12">
-                <h2 class="mb-4 tm-section-title">Contact</h2>
+                <h2 class="mb-4 tm-section-title" data-key="Contact">Contact</h2>
                 <div class="mb-5 tm-underline"></div>
-                <p class="mb-5">
+                <p class="mb-5" data-key="Contact2">
                   Paragraphe expliquant que tout le monde est libre de prendre contact.
                 </p>
             </div>
@@ -204,13 +204,13 @@
             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
               <a href="tel:0763568670" class="tm-contact-item-link">
                   <i class="fas fa-3x fa-phone mr-4"></i>
-                  <span class="mb-0">0763568670</span>
+                  <span class="mb-0" data-key="num">0763568670</span>
               </a>              
             </div>
             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
               <a href="mailto:juanita.henneville@gmail.com" class="tm-contact-item-link">
                   <i class="fas fa-3x fa-envelope mr-4"></i>
-                  <span class="mb-0">juanita.henneville@gmail.com</span>
+                  <span class="mb-0" data-key="mail">juanita.henneville@gmail.com</span>
               </a>              
             </div>
           <!--
@@ -235,7 +235,63 @@
     <script src="slick/slick.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        function redirectToEditPage() {
+            window.location.href = 'edit/index.php';
+        }
+    </script>
+    <script>
+        function createJsonFromEditableContent() {
+            var editableElements = document.querySelectorAll('[contenteditable="true"]');
+
+            function updateJson() {
+                var jsonData = {};
+
+                editableElements.forEach(function (element) {
+                    var key = element.getAttribute('data-key');  // Utilisez l'attribut data-key comme clé unique
+                    var value = element.innerText;
+
+                    jsonData[key] = value;
+                });
+
+                // Envoi des données JSON au script PHP à chaque modification
+                fetch('save.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(jsonData),
+                })
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error(error));
+            }
+
+            // Ajoute un écouteur d'événements à chaque élément éditable
+            editableElements.forEach(function (element) {
+                element.addEventListener('input', updateJson);
+                // Si vous préférez utiliser 'keyup' pour déclencher la mise à jour, utilisez la ligne suivante :
+                // element.addEventListener('keyup', updateJson);
+            });
+        }
+
+        createJsonFromEditableContent();
+
+        // Récupère le contenu JSON stocké dans le fichier edit.json
+        fetch('edit/edit.json')
+            .then(response => response.json())
+            .then(data => {
+                // Remplace le contenu des éléments éditables avec les données du fichier edit.json
+                Object.keys(data).forEach(function(key) {
+                    var elements = document.querySelectorAll('[data-key="' + key + '"]');
+                    elements.forEach(function(element) {
+                        element.innerText = data[key];
+                    });
+                });
+            })
+            .catch(error => console.error(error));
+    </script>
     <script>
 
       function getOffSet(){
