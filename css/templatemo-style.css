@@ -81,7 +81,7 @@ a:focus {
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #8f8f8f;
+  color: #82bb27;
 }
 
 .nav-item {
@@ -93,7 +93,7 @@ a:focus {
 }
 
 .tm-navbar.scroll .tm-nav-link {
-  color: #8f8f8f;
+  color: #fff;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
@@ -124,7 +124,7 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-image: url(../img/home.jpeg);
+  background-image: url(../img/home_blur.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -408,7 +408,7 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: url(../img/home.jpeg);
+  background-image: url(../img/home_blur.jpg);
   background-position: center;
   background-repeat: no-repeat;
   min-height: 850px;

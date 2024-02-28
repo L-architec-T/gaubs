@@ -31,11 +31,14 @@
                   <a class="nav-link tm-nav-link" href="#introduction">Présentation</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#work">Notre travail</a>
+                  <a class="nav-link tm-nav-link" href="#work">Galerie</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#contact">Contact</a>
-              </li>                    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="edit/index.html">Login</a>
+              </li>
             </ul>
           </div>        
         </div>
@@ -43,9 +46,9 @@
       
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">Gaub's Midi</h2>
+            <h2 class="tm-hero-title">Gaub's Midi Couverture</h2>
             <p class="tm-hero-subtitle">
-              Phrase d'accroche
+              Toiture neuve, rénovation, réparation, zinguerie.
               <br/>
             </p>
         </div>        
@@ -62,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <img src="img/16.jpeg" alt="Image" class="img-fluid tm-intro-img" />
+            <img src="img/16.jpeg" alt="Image" class="img-fluid tm-intro-img" style="border-radius: 10px;"/>
           </div>
           <div class="col-lg-6">
             <div class="tm-intro-text-container">
@@ -85,7 +88,7 @@
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Notre travail</h2>
+              <h2 class="tm-text-primary tm-section-title mb-4">Galerie</h2>
               <p class="mx-auto tm-work-description">
                 Parragraphe expliquant les photos ci-dessous.
               </p>
@@ -93,7 +96,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
+                <div class="mx-auto tm-gallery-container" style="border-radius: 193px;">
                     <div class="grid tm-gallery">
                       <a href="img/24.jpeg">
                         <figure class="effect-honey tm-gallery-item">
@@ -166,15 +169,33 @@
       </div>
     </section>
 
+    <section id="work" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+            <h2 class="tm-text-primary tm-section-title mb-4">Ou sommes nous ?</h2>
+            <p class="mx-auto tm-work-description">
+              Parragraphe expliquant la zone de travail.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="mx-auto tm-gallery-container">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
       <div class="container tm-container-contact">
         <div class="row">
             <div class="col-12">
                 <h2 class="mb-4 tm-section-title">Contact</h2>
-                <div class="mb-5 tm-underline">
-                  <div class="tm-underline-inner"></div>
-                </div>
+                <div class="mb-5 tm-underline"></div>
                 <p class="mb-5">
                   Paragraphe expliquant que tout le monde est libre de prendre contact.
                 </p>
@@ -192,25 +213,21 @@
                   <span class="mb-0">juanita.henneville@gmail.com</span>
               </a>              
             </div>
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="https://www.google.com/maps" class="tm-contact-item-link">
-                  <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
-                  <span class="mb-0">Location Maps</span>
-              </a>              
-            </div>
-            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
-              <a href="https://www.google.com/maps" class="tm-contact-item-link">
-                <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
-                <span class="mb-0">Location Maps</span>
-              </a>
-            </div>
+          <!--
+          <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+            <a href="https://www.google.com/maps" class="tm-contact-item-link">
+              <i class="fas fa-3x fa-map-marker-alt mr-4"></i>
+              <span class="mb-0">Location Maps</span>
+            </a>
+          </div>
+          -->
         </div>
       </div>
       <footer class="text-center small tm-footer">
           <p class="mb-0">
             Copyright &copy; 2024 Gaub's Midi Couverture
             
-            By : <a rel="nofollow" href="https://gaubsmidi.fr" class="tm-footer-link">X-Development</a>
+            By <a rel="nofollow" href="https://gaubsmidi.fr" class="tm-footer-link">X-Development</a>
           </p>
         </footer>
     </section>
