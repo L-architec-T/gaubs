@@ -6,6 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Gaub's Midi Couverture</title>
     <link rel="icon" href="img/logo_png.png" type="image/png">
+    <meta http-equiv="cache-control" content="max-age=31536000" />
+    <meta name="description" content="Toiture neuve, rénovation, réparation, zinguerie."/>
+    <meta name="theme-color" content="#0d6700">
+    <meta name="keywords" content="gaubs, toiture, rénovation, réparation, zinguerie" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=4">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gaub's Midi Couverture" />
+    <meta property="og:url" content="https://gaubscouverture.fr" />
+    <meta property="og:description" content="Toiture neuve, rénovation, réparation, zinguerie."/>
+    <meta property="og:image" content="./img/carte_png.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:url" content="./img/carte_png.png" />
+    <meta property="og:image:secure_url" content="./img/carte_png.png" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@DiscordDevXB">
+    <meta name="twitter:title" content="Gaub's Midi Couverture">
+    <meta name="twitter:description" content="Toiture neuve, rénovation, réparation, zinguerie.">
+    <meta name="twitter:image" content="./img/carte_png.png" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Gaub's Midi Couverture">
+    <meta name="msapplication-TileImage" content="./img/144.png">
+    <meta name="msapplication-TileColor" content="#0d6700">
+
+    <link rel="apple-touch-icon" href="./img/152.png">
     <link rel="preconnect" href="http://fonts.googleapis.com">
     <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
     <link href="http://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
