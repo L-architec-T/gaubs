@@ -93,7 +93,7 @@ a:focus {
 }
 
 .tm-navbar.scroll .tm-nav-link {
-  color: #fff;
+  /*color: #fff;*/
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
@@ -246,6 +246,7 @@ a:focus {
 
 .slick-dots {
   bottom: -65px;
+  display: none;
 }
 
 .slick-dots li {
@@ -624,6 +625,24 @@ p {
 
 .image-animee {
   animation: bougerImage 3s infinite; /* Ajustez la durée de l'animation selon votre préférence */
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
 }
 
 

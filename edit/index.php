@@ -23,7 +23,7 @@
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
         <div class="container">   
           <div class="tm-next">
-              <a href="#hero" class="navbar-brand" style="font-family: 'Anta', sans-serif;">Gaub's Midi</a>
+              <a href="#hero" class="navbar-brand" style="font-family: 'Anta', sans-serif;">Gaub's Couverture</a>
           </div>             
             
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -185,11 +185,73 @@
         <div class="row">
           <div class="col-12">
             <div class="mx-auto tm-gallery-container">
-
+                <center>
+                    <iframe
+                            width="100%"
+                            height="450"
+                            frameborder="0"
+                            style="border:0;border-radius:5px;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1446.8698421788856!2d3.368043935550154!3d43.507765771109284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b16bd7611b9f81%3A0x4cffa75cd9f36779!2s2%20Rue%20Emile%20Zola%2C%2034720%20Caux!5e0!3m2!1sfr!2sfr!4v1709204410557!5m2!1sfr!2sfr"
+                            allowfullscreen
+                    ></iframe>
+                </center>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="work" class="tm-section-pad-top">
+        <div class="container tm-container-gallery">
+            <div class="row">
+                <div class="text-center col-12">
+                    <h2 class="tm-text-primary tm-section-title mb-4" data-key="horaires" contenteditable="true" style="font-family: 'Anta', sans-serif;">Horaires d'ouverture</h2>
+                    <p class="mx-auto tm-work-description" data-key="horaires2" contenteditable="true">
+                        Vous trouverez ci-dessous nos horaires d'ouverture.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="mx-auto tm-gallery-container" style="max-width:none;">
+                        <center>
+                            <table>
+                                <tr>
+                                    <th>Jour</th>
+                                    <th>Heure d'ouverture</th>
+                                    <th>Heure de fermeture</th>
+                                </tr>
+                                <tr>
+                                    <td>Lundi</td>
+                                    <td>7h</td>
+                                    <td>16h</td>
+                                </tr>
+                                <tr>
+                                    <td>Mardi</td>
+                                    <td>7h</td>
+                                    <td>16h</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercredi</td>
+                                    <td>7h</td>
+                                    <td>16h</td>
+                                </tr>
+                                <tr>
+                                    <td>Jeudi</td>
+                                    <td>7h</td>
+                                    <td>16h</td>
+                                </tr>
+                                <tr>
+                                    <td>Vendredi</td>
+                                    <td>7h</td>
+                                    <td>16h</td>
+                                </tr>
+                            </table>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact -->
