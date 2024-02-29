@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gaub's Midi Couverture</title>
+    <link rel="icon" href="img/logo_png.png" type="image/png">
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
@@ -19,7 +23,7 @@
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
         <div class="container">   
           <div class="tm-next">
-              <a href="#hero" class="navbar-brand">Gaub's Midi</a>
+              <a href="#hero" class="navbar-brand" style="font-family: 'Anta', sans-serif;">Gaub's Midi</a>
           </div>             
             
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +50,7 @@
       
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">Gaub's Midi Couverture</h2>
+            <h2 class="tm-hero-title" style="font-family: 'Anta', sans-serif;">Gaub's Midi Couverture</h2>
             <p class="tm-hero-subtitle">
               Toiture neuve, rénovation, réparation, zinguerie.
               <br/>
@@ -65,18 +69,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <img src="img/16.jpeg" alt="Image" class="img-fluid tm-intro-img" style="border-radius: 10px;"/>
+            <img src="img/carte_png.png" alt="Image" class="img-fluid tm-intro-img image-animee" style="border-radius: 10px;"/>
           </div>
           <div class="col-lg-6">
             <div class="tm-intro-text-container">
-                <h2 class="tm-text-primary mb-4 tm-section-title" data-key="introduction">Introduction</h2>
+                <h2 class="tm-text-primary mb-4 tm-section-title" data-key="introduction" style="font-family: 'Anta', sans-serif;">Introduction</h2>
                 <p class="mb-4 tm-intro-text" data-key="introduction2">
-                  Ici se trouvera <strong>l'introduction</strong> du metier
+                  Ici se trouvera l'introduction du metier
                   expliquant se qu'ils font.
               </p>
-                <p class="mb-5 tm-intro-text">
-                  Second paragraphe
-                  <a rel="nofollow" href="https://gaubsmidi" data-key="introduction3">gaubsmidi</a>. Remerciement. </p>
+                <p class="mb-5 tm-intro-text" data-key="introduction3">
+                  Second paragraphe gaubscouverture. Remerciement. </p>
                 <div class="tm-next">
                   <a href="#work" class="tm-intro-text tm-btn-primary">Voir plus</a>
                 </div>
@@ -88,9 +91,9 @@
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4" data-key="galerie">Galerie</h2>
+              <h2 class="tm-text-primary tm-section-title mb-4" data-key="galerie" style="font-family: 'Anta', sans-serif;">Galerie</h2>
               <p class="mx-auto tm-work-description" data-key="galerie2">
-                Parragraphe expliquant les photos ci-dessous.
+                Paragraphe expliquant les photos ci-dessous.
               </p>
           </div>            
         </div>
@@ -173,9 +176,9 @@
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
-            <h2 class="tm-text-primary tm-section-title mb-4" data-key="what">Ou sommes nous ?</h2>
+            <h2 class="tm-text-primary tm-section-title mb-4" data-key="what" style="font-family: 'Anta', sans-serif;">Où sommes nous ?</h2>
             <p class="mx-auto tm-work-description" data-key="what2">
-              Parragraphe expliquant la zone de travail.
+              Paragraphe expliquant la zone de travail.
             </p>
           </div>
         </div>
@@ -194,7 +197,7 @@
       <div class="container tm-container-contact">
         <div class="row">
             <div class="col-12">
-                <h2 class="mb-4 tm-section-title" data-key="Contact">Contact</h2>
+                <h2 class="mb-4 tm-section-title" data-key="Contact" style="font-family: 'Anta', sans-serif;">Contact</h2>
                 <div class="mb-5 tm-underline"></div>
                 <p class="mb-5" data-key="Contact2">
                   Paragraphe expliquant que tout le monde est libre de prendre contact.
