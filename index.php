@@ -10,8 +10,7 @@
     <meta name="description" content="Toiture neuve, rénovation, réparation, zinguerie."/>
     <meta name="theme-color" content="#0d6700">
     <meta name="keywords" content="gaubs, toiture, rénovation, réparation, zinguerie" />
-    <!--<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">-->
-    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=4">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=4">
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Gaub's Midi Couverture" />
