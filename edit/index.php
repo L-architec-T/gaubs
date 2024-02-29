@@ -326,54 +326,52 @@
 </script>
 <script>
     function createJsonFromEditableContent() {
-        var editableElements = document.querySelectorAll('[contenteditable="true"]');
+    var editableElements = document.querySelectorAll('[contenteditable="true"]');
 
-        function updateJson() {
-            var jsonData = {};
+    function updateJson() {
+        var jsonData = {};
 
-            editableElements.forEach(function (element) {
-                var key = element.getAttribute('data-key');  // Utilisez l'attribut data-key comme clé unique
-                var value = element.innerText;
-
-                jsonData[key] = value;
-            });
-
-            // Envoi des données JSON au script PHP à chaque modification
-            fetch('save.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(jsonData),
-            })
-            .then(response => response.json())
-            .then(data => console.log(data))
-            .catch(error => console.error(error));
-        }
-
-        // Ajoute un écouteur d'événements à chaque élément éditable
         editableElements.forEach(function (element) {
-            element.addEventListener('input', updateJson);
-            // Si vous préférez utiliser 'keyup' pour déclencher la mise à jour, utilisez la ligne suivante :
-            // element.addEventListener('keyup', updateJson);
+            var key = element.getAttribute('data-key');
+            var value = element.innerText;
+
+            jsonData[key] = value;
         });
+
+        // Ajoute une chaîne de requête unique pour éviter le cache
+        var timestamp = new Date().getTime();
+        var url = 'save.php?cacheBuster=' + timestamp;
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(jsonData),
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
     }
 
-    createJsonFromEditableContent();
+    editableElements.forEach(function (element) {
+        element.addEventListener('input', updateJson);
+    });
+}
 
-    // Récupère le contenu JSON stocké dans le fichier edit.json
-    fetch('edit.json')
-        .then(response => response.json())
-        .then(data => {
-            // Remplace le contenu des éléments éditables avec les données du fichier edit.json
-            Object.keys(data).forEach(function(key) {
-                var elements = document.querySelectorAll('[data-key="' + key + '"]');
-                elements.forEach(function(element) {
-                    element.innerText = data[key];
-                });
+createJsonFromEditableContent();
+
+fetch('edit.json?cacheBuster=' + new Date().getTime())
+    .then(response => response.json())
+    .then(data => {
+        Object.keys(data).forEach(function(key) {
+            var elements = document.querySelectorAll('[data-key="' + key + '"]');
+            elements.forEach(function(element) {
+                element.innerText = data[key];
             });
-        })
-        .catch(error => console.error(error));
+        });
+    })
+    .catch(error => console.error(error));
 </script>
 
 <script>
