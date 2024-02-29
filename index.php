@@ -51,9 +51,9 @@
     </nav>
 
     <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
+        <div class="tm-hero-text-container-inner" style="z-index: 200;">
             <h2 class="tm-hero-title" style="font-family: 'Anta', sans-serif;">Gaub's Midi Couverture</h2>
-            <p class="tm-hero-subtitle">
+            <p class="tm-hero-subtitle" data-key="subtitle">
                 Toiture neuve, rénovation, réparation, zinguerie.
                 <br/>
             </p>
@@ -230,28 +230,38 @@
                             </tr>
                             <tr>
                                 <td>Lundi</td>
-                                <td>7h</td>
-                                <td>16h</td>
+                                <td style="color:green" data-key="Lundi">7h</td>
+                                <td style="color:green" data-key="Lundi2">16h</td>
                             </tr>
                             <tr>
                                 <td>Mardi</td>
-                                <td>7h</td>
-                                <td>16h</td>
+                                <td style="color:green" data-key="Mardi">7h</td>
+                                <td style="color:green" data-key="Mardi2">16h</td>
                             </tr>
                             <tr>
                                 <td>Mercredi</td>
-                                <td>7h</td>
-                                <td>16h</td>
+                                <td style="color:green" data-key="Mercredi">7h</td>
+                                <td style="color:green" data-key="Mercredi2">16h</td>
                             </tr>
                             <tr>
                                 <td>Jeudi</td>
-                                <td>7h</td>
-                                <td>16h</td>
+                                <td style="color:green" data-key="Jeudi">7h</td>
+                                <td style="color:green" data-key="Jeudi2">16h</td>
                             </tr>
                             <tr>
                                 <td>Vendredi</td>
-                                <td>7h</td>
-                                <td>16h</td>
+                                <td style="color:green" data-key="Vendredi">7h</td>
+                                <td style="color:green" data-key="Vendredi2">16h</td>
+                            </tr>
+                            <tr>
+                                <td>Samedi</td>
+                                <td style="color:red" data-key="Samedi">Fermé</td>
+                                <td style="color:red" data-key="Samedi2">Fermé</td>
+                            </tr>
+                            <tr>
+                                <td>Dimanche</td>
+                                <td style="color:red" data-key="Dimanche">Fermé</td>
+                                <td style="color:red" data-key="Dimanche2">Fermé</td>
                             </tr>
                         </table>
                     </center>
