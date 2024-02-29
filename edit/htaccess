@@ -1,3 +1,8 @@
+#AuthType Basic
+#AuthName "Page Protégée"
+#AuthUserFile /var/www/html/gaubs/edit/.htpasswd
+#Require user root
+
 RedirectMatch 403 /\.git
 RedirectMatch 403 /\.gitignore
 
@@ -10,11 +15,6 @@ RedirectMatch 403 /\.gitignore
 	Options +Indexes
     RewriteEngine on
     RewriteRule ^/?([a-zA-Z-0-9]+)$ index.php?code=$1
-
-    AuthType Basic
-    AuthName "Page Protégée"
-    AuthUserFile /var/www/cam/.htpasswd
-    #Require user root
 
 	ReWriteCond %{HTTP:accept-encoding} gzip
 	RewriteCond %{HTTP_USER_AGENT} !Safari
