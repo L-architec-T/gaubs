@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin
+Sitemap: https://gaubsconverture.fr/sitemap.xml
